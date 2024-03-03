@@ -5,14 +5,17 @@ namespace WebDevCWK.Models;
 
 public class Users
 {
-    [JsonIgnore]
     [Key]
+    [Required]
     public int UserID {get;set;}
     [Required]
     public string? UserName{get;set;}
 
     //FK
+    [JsonIgnore]
     public List<UserRoles>? UserRoles {get;set;}
+    [JsonIgnore]
     public List<Tasks>? Tasks {get;set;}
+    [JsonIgnore]
     public List<Teams>? Teams {get;set;}
 }

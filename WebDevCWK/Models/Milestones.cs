@@ -5,17 +5,18 @@ namespace WebDevCWK.Models;
 
 public class Milestones
 {
-    [JsonIgnore]
     [Key]
+    [Required]
     public int MilestoneID {get;set;}
     [Required]
     public string? MilestoneName {get;set;}
     public string? MilestoneDescription {get;set;}
-    public DateTime MilestoneDueDate {get;set;}
+    public string? MilestoneDueDate {get;set;}
     public string? Status {get;set;}
 
     //FK
     [Required]
     public int ProjectID { get; set; }
+    [JsonIgnore]
     public Projects? Project { get; set; }
 }

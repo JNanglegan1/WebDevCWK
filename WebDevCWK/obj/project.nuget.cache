@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "twcv45HXkDt5e3nCGvq+jJszeAWVQcI2c1uLFRktxelVrsUIrfeBOxbTmHKYOTFL1C0FLcOdBPxAbaRPGYPzyQ==",
+  "dgSpecHash": "SIc17LxH+cHuZwk8oQuxbQgyE90QsYgN216+BVlzuwKFAVMmbJlYaMuMsmku9IoQ9DJKt/etUUnZghDDC1GfzQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jasly\\Documents\\Uni\\WebDevCWK\\WebDevCWK.csproj",
+  "projectFilePath": "C:\\Users\\jasly\\Documents\\GitHub\\WebDevCWK\\WebDevCWK\\WebDevCWK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jasly\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -137,6 +137,7 @@
     "C:\\Users\\jasly\\.nuget\\packages\\nuget.projectmodel\\6.3.1\\nuget.projectmodel.6.3.1.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\nuget.protocol\\6.3.1\\nuget.protocol.6.3.1.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\nuget.versioning\\6.3.1\\nuget.versioning.6.3.1.nupkg.sha512",
+    "C:\\Users\\jasly\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",

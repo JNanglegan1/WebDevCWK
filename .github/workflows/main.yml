@@ -32,14 +32,14 @@ jobs:
       run: dotnet restore WebDevCWK/WebDevCWK.csproj || true
 
     - name: Build
-      run: dotnet build WebDevCWK.csproj --configuration Release --no-restore
+      run: dotnet build WebDevCWK/WebDevCWK.csproj --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish WebDevCWK.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+      run: dotnet publish WebDevCWK/WebDevCWK.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
 
     - name: Deployment
-      uses: azure/webapps-deploy@v3
+      uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}

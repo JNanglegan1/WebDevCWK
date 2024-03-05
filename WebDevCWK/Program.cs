@@ -52,6 +52,8 @@ app.MapControllers();
 
 app.UseHttpsRedirection();
 
+
+//keeping this below for testing purposes
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

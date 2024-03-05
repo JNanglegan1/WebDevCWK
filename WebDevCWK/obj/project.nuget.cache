@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SIc17LxH+cHuZwk8oQuxbQgyE90QsYgN216+BVlzuwKFAVMmbJlYaMuMsmku9IoQ9DJKt/etUUnZghDDC1GfzQ==",
+  "dgSpecHash": "/P/frYFm2CErCIMoyQ6gYKF+5WZW2P7fnfQZqbgQJhvbGbd4s+b0gg5C2raj07M92lz605MxckcoEbUuM7kcLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jasly\\Documents\\GitHub\\WebDevCWK\\WebDevCWK\\WebDevCWK.csproj",
+  "projectFilePath": "c:\\Users\\jasly\\Documents\\GitHub\\WebDevCWK\\WebDevCWK\\WebDevCWK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jasly\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jasly\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

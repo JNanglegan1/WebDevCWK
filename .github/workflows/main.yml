@@ -29,13 +29,13 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore
-      run: dotnet restore WebDevCWK/WebDevCWK.csproj || true
+      run: dotnet restore WebDevCWK.csproj || true
 
     - name: Build
-      run: dotnet build WebDevCWK/WebDevCWK.csproj --configuration Release --no-restore
+      run: dotnet build WebDevCWK.csproj --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish WebDevCWK/WebDevCWK.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
+      run: dotnet publish WebDevCWK.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
 
     - name: Deployment

@@ -15,7 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-    - uses: actions/checkout@v3
+    - name: Use Node.js 20.x
+      uses: actions/setup-node@v4
+      with: 
+        node-version: '20.x'
+
+    - name: Checkout code
+      uses: actions/checkout@v4
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -23,19 +29,13 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore
-      run: dotnet restore WebDevCWK/WebDevCWK.sln
+      run: dotnet restore WebDevCWK/WebDevCWK.csproj || true
 
     - name: Build
-      run: dotnet build WebDevCWK/WebDevCWK.sln --configuration Release --no-restore
+      run: dotnet build WebDevCWK/WebDevCWK.csproj --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish WebDevCWK/WebDevCWK.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
-
-    - name: dotnet install ef
-      run: dotnet tool install -g dotnet-ef
-
-    - name: dotnet bundle migration
-      run: dotnet ef migrations bundle --runtime linux-x64 -p DotNetCoreSqlDb/DotNetCoreSqlDb.csproj -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp/migrate
+      run: dotnet publish WebDevCWK/WebDevCWK.csproj --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
 
     - name: Deployment

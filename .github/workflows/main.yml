@@ -19,10 +19,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore
-      run: dotnet restore ./WebDevCWK.sln
+      run: dotnet restore WebDevCWK/WebDevCWK.sln
 
     - name: Build
-      run: dotnet build ./WebDevCWK.sln --configuration Release --no-restore
+      run: dotnet build WebDevCWK/WebDevCWK.sln --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish ./WebDevCWK.sln --configuration Release --no-build
+      run: dotnet publish WebDevCWK/WebDevCWK.sln --configuration Release --no-build

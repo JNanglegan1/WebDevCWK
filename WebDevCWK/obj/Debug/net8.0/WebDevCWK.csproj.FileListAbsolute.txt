@@ -580,3 +580,6 @@ C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\runtimes\li
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\runtimes\osx-x64\native\libsqlite3.dylib
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\runtimes\win7-x64\native\sqlite3.dll
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\StackExchange.Redis.dll

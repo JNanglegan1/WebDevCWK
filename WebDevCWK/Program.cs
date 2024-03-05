@@ -14,12 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ProductivityContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING")));
-builder.Services.AddStackExchangeRedisCache(options =>
-{
-options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
-options.InstanceName = "SampleInstance";
-});
+    options.UseSqlite(builder.Configuration.GetConnectionString("Connection")));
 
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ProductivityContext>().AddDefaultTokenProviders();

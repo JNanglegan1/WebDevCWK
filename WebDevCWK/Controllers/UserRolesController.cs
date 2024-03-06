@@ -12,7 +12,7 @@ namespace WebDevCWK.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin,Manager")]
+    //[Authorize(Roles = "Admin,Manager")]
     public class UserRolesController : ControllerBase
     {
         private readonly ProductivityContext _context;

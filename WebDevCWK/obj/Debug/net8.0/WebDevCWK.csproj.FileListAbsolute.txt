@@ -570,7 +570,6 @@ C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\staticwebas
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebDevCWK.props
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\scopedcss\bundle\WebDevCWK.styles.css
-C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\WebDevCWK.csproj.Up2Date
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\WebDevCWK.dll
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\refint\WebDevCWK.dll
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\WebDevCWK.pdb
@@ -583,3 +582,4 @@ C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\runtimes\wi
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\jasly\Documents\GitHub\WebDevCWK\WebDevCWK\obj\Debug\net8.0\WebDevCWK.csproj.Up2Date

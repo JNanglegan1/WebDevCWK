@@ -1,0 +1,56 @@
+.App body{
+  margin: 0px;
+  display: flex; 
+}
+
+.App h1 {
+  text-align: center;
+}
+
+.App {
+  background-size: "cover";
+  background-repeat: no-repeat;
+}
+
+
+.App ul{
+  display: flex;
+  border: 5px solid #0b520b;
+  border-width: 5px 0;
+  list-style-type: none;
+  background-color: rgb(43, 204, 31);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.App li{
+  display: inline;
+}
+
+.App div.navbar-header a{
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: underline overline;
+  padding-left: 0px;
+  display: inline-block;
+  text-align: center; 
+}
+
+/* Links */
+.App ul.navbar-nav a{
+  font-weight:600;
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  text-align: left; 
+}
+
+.App ul.navbar-nav a:hover{
+  background-color: rgb(52, 124, 19);
+}
+
+

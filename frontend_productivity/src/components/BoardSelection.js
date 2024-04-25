@@ -61,7 +61,7 @@ const Projects = () => {
 
     const handleCreate = () => {
       setSelectedProject(null);
-      setEditingProject({ ProjectName: '', ProjectDescripton: '', ProjectDueDate: '', ProjectStatus: ''});
+      setEditingProject({ ProjectName: '', ProjectDescription: '', ProjectDueDate: '', ProjectStatus: ''});
   };
 
     const handleCancelEdit = () => {

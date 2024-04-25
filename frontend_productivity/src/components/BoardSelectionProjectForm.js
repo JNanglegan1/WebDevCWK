@@ -1,7 +1,7 @@
 // BoardSelectionProjectForm.js
 
 import React from 'react';
-import {Button, Form} from 'react-bootstrap';
+import {Button, Form, Select} from 'react-bootstrap';
 
 const ProjectForm = ({ project, handleInputChange, handleSubmit, handleCancel }) => {
   
@@ -25,8 +25,12 @@ const ProjectForm = ({ project, handleInputChange, handleSubmit, handleCancel })
             </Form.Group>
             <label>Project Status</label>
             <Form.Group classname="mb-3" controlId="formStatus">
-              <Form.Control type="text" name="ProjectStatus" placeholder="Enter Current Status" defaultValue={project.projectStatus} required onChange={handleInputChange}>
-              </Form.Control>
+              <Form.Select name="ProjectStatus" defaultValue={project.projectStatus} required onChange={handleInputChange} aria-label="Please Select and Option">
+                <option value="" disabled selected>Please select status from dropdown</option>
+                <option type="text">To Do</option>
+                <option type="text" >In Progress</option>
+                <option type="text">Done</option>
+              </Form.Select>
             </Form.Group>
             <Button variant="success" type="submit">Submit</Button>
             <Button variant="danger" type="button" onClick={handleCancel}>Cancel</Button>

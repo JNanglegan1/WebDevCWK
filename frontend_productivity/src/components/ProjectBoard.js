@@ -92,15 +92,29 @@ const ProjectBoard = () => {
                       console.log('Creating new task:', newTask);
                       await axios.post(`${API_BASE_URL}Tasks`, newTask);
                       //Look for column and push the task to column
-                      console.log('taskToColumn:', taskToColumn.title);
-                      const targetColumn = columns.find(col => col.title === taskToColumn.title);
-                      console.log('targetColumn:', targetColumn.title);
+                      let targetColumn;
+                      switch (newTask.TaskStatus) {
+                        case 'To Do':
+                          targetColumn = columns.find((col) => col.title === 'To Do');
+                          break;
+                        case 'In Progress':
+                          targetColumn = columns.find((col) => col.title === 'In Progress');
+                          break;
+                        case 'Done':
+                          targetColumn = columns.find((col) => col.title === 'Done');
+                          break;
+                        default:
+                          console.error('Unknown task status:', newTask.TaskStatus);
+                      }
+                      console.log(`targetColumn: ${targetColumn.title}`);
+                      console.log(`task being pushed: ${newTask.TaskName}`);
+
                       if (targetColumn) {
-                        console.log('targetColumn.tasks before push:', targetColumn.tasks);
-                        targetColumn.tasks.push({id, ...newTask });
-                        console.log('targetColumn.tasks after push:', targetColumn.tasks);
+                        targetColumn.tasks.push({ id, ...newTask });
+                        console.log(`Tasks in target column "${targetColumn.title}":`);
+                        console.table(targetColumn.tasks);
                       } else {
-                        console.error('Column not found for title', targetColumn.title);
+                        console.error('Column not found for status:', newTask.TaskStatus);
                       }
                   }
                   fetchTasks();

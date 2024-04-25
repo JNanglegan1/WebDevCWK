@@ -15,13 +15,13 @@ const ProjectColumn = ({ title, tasks, handleCreate, handleEdit, handleDelete })
         <table> 
           <tbody> 
             {tasks.map((task) => (
-              <tr key={task.taskId}> 
-                <td>{task.taskID ? task.taskID : 'This shouldnt be blank'}</td>
-                <td>{task.taskName ? task.taskName : 'N/A'}</td>
-                <td>{task.taskDescription ? task.taskDescription : 'N/A'}</td>
-                <td>{task.taskDueDate ? task.taskDueDate : 'N/A'}</td>
-                <td>{task.taskStatus ? task.taskStatus : 'N/A'}</td>
-                <td>
+              <tr key={task.TaskID}> 
+                <td style={{ paddingLeft: '10px' }}>{task.TaskID ? task.TaskID : 'ID'}</td>
+                <td style={{ paddingLeft: '10px' }}>{task.TaskName ? task.TaskName : 'N/A'}</td>
+                <td style={{ paddingLeft: '10px' }}>{task.TaskDescription ? task.TaskDescription : 'N/A'}</td>
+                <td style={{ paddingLeft: '10px' }}>{task.TaskDueDate ? task.TaskDueDate : 'N/A'}</td>
+                <td style={{ paddingLeft: '10px' }}>{task.TaskStatus ? task.TaskStatus : 'N/A'}</td>
+                <td style={{ paddingLeft: '20px' }}>
                   <Button variant="secondary" onClick={() => handleEdit(task.taskId)}>Edit Task</Button>
                   <Button variant="danger" onClick={() => handleDelete(task.taskId)}>Delete Task</Button>
                 </td>

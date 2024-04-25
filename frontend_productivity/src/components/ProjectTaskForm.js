@@ -25,8 +25,12 @@ const TaskForm = ({ task, handleInputChange, handleSubmit, handleCancel }) => {
             </Form.Group>
             <label>Task Status</label>
             <Form.Group classname="mb-3" controlId="formStatus">
-              <Form.Control type="text" name="TaskStatus" placeholder="Enter Current Status" defaultValue={task.taskStatus} required onChange={handleInputChange}>
-              </Form.Control>
+              <Form.Select name="TaskStatus" defaultValue={task.taskStatus} required onChange={handleInputChange} aria-label="Please Select and Option">
+                <option value="" disabled selected>Please select status from dropdown</option>
+                <option type="text">To Do</option>
+                <option type="text" >In Progress</option>
+                <option type="text">Done</option>
+              </Form.Select>
             </Form.Group>
             <Button variant="success" type="submit">Submit</Button>
             <Button variant="danger" type="button" onClick={handleCancel}>Cancel</Button>
